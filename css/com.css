@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document wlo:Cflower */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { border:0 none; font:inherit; margin:0; padding:0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block;}
+ol, ul { list-style:outside none none;}
+blockquote, q { quotes:none;}
+blockquote::before, blockquote::after, q::before, q::after { content:none;}
+table { border-collapse:collapse; border-spacing:0;}
+*{ box-sizing:border-box; outline:0 none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+input, textarea { border-radius:0; outline:0 none; resize:none; -webkit-appearance: none;/*去掉iOS下input的默认内阴影*/}
+.clearfix:after,.clearfloat:after {visibility:hidden;display:block;font-size:0;content:"";clear:both;height:0;}
+html{ font-family:"Heiti SC",Helvetica,"Microsoft YaHei",sans-serif; -webkit-text-size-adjust:none; font-size:100px;}
+body{ margin:0 auto; min-width:320px; position:relative; width:100%; height:100%;}
+#wrap{ margin:0 auto; min-width:320px;}
+.filterBlur{ -moz-filter:blur(0.05rem); -ms-filter:blur(0.05rem); -o-filter:blur(0.05rem); -webkit-filter:blur(0.05rem); filter:blur(0.05rem);}
+a{ text-decoration:none; color:inherit;}
+.clearfloat:after{display:block;content:''; clear:both;}
+.clearfloat{zoom:1;}
+
+
+#footer{ text-align:center; padding-top:0.2rem; color:#626262; background:#05161f; position:relative;}
+.copyright span,.copyright img,.note span{ display:inline-block; vertical-align:top;}
+.copyright,.note{ margin:0 auto;}
+.copyright{ height:0.8rem;}
+.copyright span{ margin-top:0.03rem; margin-left:0.18rem; text-align:left; font-size:0.2rem;}
+.copyright img{ width:1.4rem;}
+.note{ padding:0.2rem 0; border-top:1px solid #303030; line-height:0.28rem; overflow:hidden;}
+.note span{ margin:0 0.08rem; font-size:0.2rem; color:#8c8c8c;}
+
+
+
+
+
+
+#maskLayer{ display:none; position:absolute; z-index:100; left:0; top:0; width:100%; margin:0 auto; height:100%; background:#000; opacity:0.5; filter:alpha(opacity=50);}
+#alertInfo{ display:none; background:#fff; left:50%; top:-100%; position:absolute; z-index:200; width:96%;}
+#alertInfo .close{ position:absolute; right:8px; top:0.19rem; overflow:hidden; font-size:0; text-indent:-999999px; display:block; width:21px; height:23px; cursor:pointer; background:url(../images/close.png) no-repeat center center; z-index:220;}
+#alertInfo h4{ background:#fbfbfb; color:#6b6b6b; text-align:center; font-size:18px; zoom:0; font-weight:normal; margin-bottom:0.15rem; line-height:1; padding:0.22rem 0; border-bottom:1px solid #ddd;}
+.logInfo{ width:100%;}
+.logInfo ul{ margin:0 auto; width:282px;}
+.logInfo ul li{ float:left; display:inline; width:100%; margin-bottom:0.15rem; line-height:30px; font-size:24px;}
+.logInfo ul li label,.logInfo ul li input,.selBox,.logInfo ul li img{ float:left; display:inline; line-height:32px; font-size:14px; color:#b1a9a9; font-weight:normal;}
+.logInfo ul li input,.selBox{ text-indent:0.5em; padding:0 5px; width:212px; background:#fff; border:none; border:1px solid #d9d9d9; border-radius:5px; height:30px; font-size:14px; line-height:30px; color:#000;}
+.logInfo ul li label{ text-align:right; height:30px; font-size:14px; width:63px;}
+.selBox{ position:relative;}
+.selBox i,.selBox em,.selBox em b{ position:absolute; display:block; right:0; top:0; cursor:pointer; font-style:normal;}
+.selBox i{ padding:0 5px; text-indent:0.5em; width:212px; z-index:6; height:30px; line-height:30px;}
+.selBox em{ z-index:5; width:31px; height:100%; border-left:1px solid #d9d9d9; overflow:hidden; background:url(../images/sel.png) no-repeat center center; border-radius:0 5px 5px 0;}
+.selBox em b{ display:none;}
+.selBox .selC{ display:none; background:#e5e5e5; z-index:1; position:absolute; border:1px solid #d9d9d9; top:28px; width:212px; left:0;}
+.selBox .selC a{ display:block; font-size:14px; padding:0 5px; color:#2a1a11; line-height:28px;}
+.selBox .selC a:hover{ text-decoration:none;}
+.selBox .selC a.selectedV,.selBox .selC a:hover{ background:#6c6c6d; color:#fff;}
+.logInfo ul li.yzM{ position:relative;}
+.logInfo ul li #verifyImg{ background:#fff; position:absolute; right:7px; top:0; height:30px; border-radius:0 5px 5px 0;}
+.logInfo ul li.tsli{ line-height:1; color:red; font-size:14px; margin-bottom:0;}
+.infoBtn{ margin:0 auto; text-align:center; width:100%; zoom:0;}
+.infoBtn a{ display:inline-block; vertical-align:top; text-align:center; width:120px; color:#fff; background:#f15b00; font-size:16px; font-weight:bold; height:40px; line-height:40px; margin:0 10px;}
+.infoBtn a:hover{ text-decoration:none;}
+.tsInfo .infoBtn{ *background:#f15b00;}
+.logInfo .infoBtn a,.tsInfo .infoBtn a{ display:block; margin:0 auto; width:100%; zoom:0;}
+.tsInfo .dd a{ display:inline-block; width:50%;}
+.tsInfo .dd a.c{ background:#999;}
+.tsInfo{ padding-bottom:0.32rem; font-size:16px; line-height:1.5; color:#000; text-align:center;}
+.tsInfo .p{ padding:0 0.36rem; margin:0 auto;}
+.tsInfo .p a{ color:#d61515;}
+.tsInfo .infoBtn{ margin-top:0.24rem; margin-bottom:-0.32rem; width:100%;}
+.userInfo{ font-size:0.2rem; padding-bottom:0.2rem; color:#6b6b6b;}
+.userInfo table td,.userInfo table th{ text-align:center; font-weight:normal; padding:0.05rem; font-size:0.16rem;}
+.userInfo table thead th{ background:#ddd;}
+.userInfo table thead td{ line-height:0;}
+
+.userInfo table thead th,.userInfo table thead td{ width:33.33%;}
+
+
+
+
+@media screen and (min-width:640px){
+#wrap{ box-shadow:0 0 0.08rem #000;}
+#alertInfo .close{ top:19px;}
+#alertInfo h4{ margin-bottom:15px; padding:22px 0;}
+.logInfo ul li{ margin-bottom:15px;}
+.tsInfo{ padding-bottom:32px;}
+.tsInfo .p{ padding:0 36px;}
+.tsInfo .infoBtn{ margin-top:24px; margin-bottom:-32px;}
+.userInfo{ font-size:20px; padding-bottom:20px;}
+.userInfo table td,.userInfo table th{ padding:5px; font-size:16px;}
+}
+
+.lbInfo{background:#000;padding: 0.2rem 0;}
+.lbInfo .actimgText{display: block;}
+.lbimg img{width: 100%;}
